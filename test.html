@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scaling Image Caption</title>
+<style>
+.container {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+.caption {
+   display: flex;
+   flex: 1 1;
+   min-width: 300px;
+   max-width: 600px;
+   flex-flow: row nowrap;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid;
+   margin: .75em;
+   box-sizing: border-box;
+}
+.caption * {
+   margin: .75em;
+   box-sizing: inherit;
+}
+.caption img {
+   width: 50%;
+   max-width: 350px; /*actual image width*/
+   height: auto; /* maintain aspect ratio*/
+}
+.caption figcaption {
+   flex: 1 1 50%;
+}
+
+@media all and (max-width: 400px) {
+   .container, .caption {
+      flex-flow: row wrap;
+      flex: 0 0 100%;
+      min-width: auto;
+   }
+   .caption img {width:100%;}
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+   <figure class="caption">
+      <img src="http://via.placeholder.com/350x250" width="350" height="250" alt="">
+      <figcaption>
+         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+      </figcaption>
+   </figure>
+   <figure class="caption">
+      <img src="http://via.placeholder.com/350x250" width="350" height="250" alt="">
+      <figcaption>
+         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+      </figcaption>
+   </figure>
+   <figure class="caption">
+      <img src="http://via.placeholder.com/350x250" width="350" height="250" alt="">
+      <figcaption>
+         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+      </figcaption>
+   </figure>
+   <figure class="caption">
+      <img src="http://via.placeholder.com/350x250" width="350" height="250" alt="">
+      <figcaption>
+         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+      </figcaption>
+   </figure>
+</div>
+
+</body>
+</html>

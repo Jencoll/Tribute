@@ -1,0 +1,176 @@
+html {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {    
+    background-color: #FBF6E7;
+}
+
+main {
+    margin: 0 auto;
+    bottom: 1rem;
+    display: flex;
+}
+
+/* Header */
+header {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: AlongSansLight;
+    font-size: 42px;
+    color: #5B3330;
+}
+
+h2 {
+    font-family: AlongSansThin;
+    font-size: 28px;
+    color: #5B3330;
+}
+
+/*Content section */
+
+#content {
+    margin: 2rem;
+}
+
+#tribute-info {
+    max-width: 100%;
+}
+
+h3 {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    color: #5B3330;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+#biography, #bibliography {
+    display: inline-flex;
+    margin: 1rem 0;
+    padding: 0 1.5rem;
+    background-color: #ffffff;
+    border-radius: 2%;
+    border-style: outset;
+    border-color: rgba(147, 56, 16, 0.5);
+}
+
+#img-div {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 100%;
+    min-width: auto;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin: 0 auto;
+    padding-right: 20px;
+    max-width: 270px;
+}
+
+#imgwrap {
+    flex: 1 1 60%;
+}
+
+#image {
+    position: relative;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+figcaption {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 11px;
+    flex: 1 1 50%;
+}
+
+.last {
+    margin-bottom: 16px;
+}
+
+th {
+    font-family: 'Open Sans';
+    color: #5B3330;
+    font-size: 14px;
+}
+li {
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+table {
+    max-width: 100%;
+    overflow-x: auto;
+    margin-right: 1rem;
+}
+
+/* Footer */
+
+footer {
+    display: block;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+/* Cellphone */
+@media only screen and (max-width: 550px) {
+    p {
+        font-size: 13px;
+    }
+
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+    }
+    
+    table, td {
+        width: 100%;
+    }
+
+    td {
+        padding: 0;
+    }
+
+    tr {
+        margin-bottom: 6px;
+    }
+
+    #ul1 {
+        margin-bottom: 0;
+    }
+
+    #ul2 {
+        margin-top: 0;
+    }
+
+    li {
+        font-size: 13px;
+    }
+
+    #content {
+        margin-bottom: 0;
+    }
+
+    footer {
+        max-width: 75vw;
+    }
+
+    .footer {
+        text-align: center;
+        justify-content: center;
+    }
+}
